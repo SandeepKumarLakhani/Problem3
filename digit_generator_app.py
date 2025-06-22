@@ -12,7 +12,7 @@ def build_generator():
     return model
 
 generator = build_generator()
-generator.load_weights("generator_weights.h5")
+generator.load_weights("generator.weights.h5")
 
 def generate_images(n):
     noise = tf.random.normal([n, 100])
